@@ -10,6 +10,21 @@
 </head>
 
 <body>
+  <nav class="container mx-auto py-2 px-3">
+    <div class="flex flex-wrap justify-between items-center">
+      <a href="">
+        <img src="./image/logo.png" alt="Logo" class="w-40">
+      </a>
+      <button type="button" onclick="toggleNavbar()" class="inline md:hidden bg-sky-500 px-3 py-2 text-white text-sm">Menu</button>
+      <div class="hidden w-full md:block md:w-auto border md:border-none p-5 md:p-0 mt-2 md:pt-0 rounded-2xl" id="navbar">
+        <ul class="flex flex-col md:flex-row text-sm">
+          <li><a href="#" class="block py-2 px-4 hover:bg-sky-500 hover:text-white md:hover:text-gray-900 md:hover:bg-transparent rounded-lg">Beranda</a></li>
+          <li><a href="#" class="block py-2 px-4 hover:bg-sky-500 hover:text-white md:hover:text-gray-900 md:hover:bg-transparent rounded-lg">Tugas</a></li>
+          <li><a href="#" class="block py-2 px-4 hover:bg-sky-500 hover:text-white md:hover:text-gray-900 md:hover:bg-transparent rounded-lg">Berita</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <section class="container mx-auto">
     <div class="flex flex-col md:flex-row justify-center items-center">
       <!-- Text -->
@@ -203,7 +218,8 @@
               dignissimos delectus esse doloribus expedita non explicabo, sunt, ipsam distinctio quos unde similique
               voluptatem.</p>
           </div>
-          <a href="#" class="inline-block text-sm text-sky-600">Lihat selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#" class="inline-block text-sm text-sky-600">Lihat selengkapnya <i
+              class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="flex flex-col items-center border border-gray-200 rounded-3xl">
@@ -217,7 +233,8 @@
               dignissimos delectus esse doloribus expedita non explicabo, sunt, ipsam distinctio quos unde similique
               voluptatem.</p>
           </div>
-          <a href="#" class="inline-block text-sm text-sky-600">Lihat selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#" class="inline-block text-sm text-sky-600">Lihat selengkapnya <i
+              class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="flex flex-col items-center border border-gray-200 rounded-3xl">
@@ -231,7 +248,8 @@
               dignissimos delectus esse doloribus expedita non explicabo, sunt, ipsam distinctio quos unde similique
               voluptatem.</p>
           </div>
-          <a href="#" class="inline-block text-sm text-sky-600">Lihat selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#" class="inline-block text-sm text-sky-600">Lihat selengkapnya <i
+              class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
@@ -241,9 +259,15 @@
   </section>
 
   <footer class="bg-gray-900 p-4 mt-10">
-    <p class="text-xs text-gray-100 text-center">© 2023 Materi kuliah Front End Development by kanglerian & sopyansauri | Politeknik LP3I Kampus Tasikmalaya</p>
+    <p class="text-xs text-gray-100 text-center">© 2023 Materi kuliah Front End Development by kanglerian & sopyansauri
+      | Politeknik LP3I Kampus Tasikmalaya</p>
   </footer>
-
+  <script>
+    const toggleNavbar = () => {
+      let navbar = document.getElementById('navbar');
+      navbar.classList.toggle('hidden');
+    }
+  </script>
 </body>
 
 </html>
